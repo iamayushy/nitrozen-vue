@@ -1,8 +1,8 @@
 {
-  "name": "@gofynd/nitrozen-vue",
+  "name": "byndui",
   "version": "0.0.41",
   "private": false,
-  "description": "Fynd Design Library for Vue",
+  "description": "work",
   "scripts": {
     "serve": "vue-cli-service serve --port 4000",
     "build": "vue-cli-service build",
