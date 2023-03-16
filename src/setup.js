@@ -1,10 +1,11 @@
 import * as NitrozenComponents from './components';
 import NitrozenSnackbar from './components/NSnackbar';
+import { isClient } from './clientOnly';
 
 let NitrozenVuePlugin = {
   install: (Vue) => {
     Object.values(NitrozenComponents).forEach((NComponent) => {
-      Vue.component(NComponent.name, NComponent)
+      Vue.component(NComponent.name, isClient(NComponent))
     });
 
     // Snackbar
